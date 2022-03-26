@@ -1,0 +1,244 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : May 24, 2019, 1:41:05 PM
+    Author     : frontend
+*/
+
+
+*{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    margin: 0;
+}
+
+html{
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-size: 1.6rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color:#2C2D3C;
+}
+
+img{
+    max-width: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+
+.clearfix:after{
+    clear: both;
+    content: '';
+    display: table;
+}
+
+
+.container{
+    margin: 0 auto;
+    width: 1170px;
+}
+
+
+/*
+font-family: 'Open Sans', sans-serif; 400,700
+font-family: 'Roboto', sans-serif;400
+*/
+
+
+.section-title{
+    font-size: 3.2rem;
+    line-height: 4.3rem;
+    margin-bottom: 3.5rem;
+    text-align: center;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+.justify-around{
+    justify-content: space-around;
+}
+
+.align-items-center{
+    align-items: center;
+}
+.align-items-start{
+    align-items: flex-start;
+}
+
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+.w-33{
+    flex: 0 0 calc(33.33% - 72px/3);
+    width: calc(33.33% - 72px/3);
+}
+.w-50{
+    flex: 0 0 calc(50% - 30px/2);
+    width: calc(50% - 30px/2);
+}
+
+header .logo{
+    display: block;
+}
+
+header .main-menu{
+    list-style: none;
+    padding-left: 0;
+}
+header .main-menu li:not(:first-of-type){
+    margin-left: 130px;
+}
+header .main-menu a{
+    padding: 20px 10px;
+    display: block;
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+    letter-spacing: 0.46px;
+    color:#2C2D3C;
+    font-weight: 700;
+    border-bottom: 2px solid transparent;
+}
+
+header .main-menu a:hover,
+header .main-menu a.active{
+    border-bottom: 2px solid #28A745;
+}
+
+main{
+    padding-bottom: 150px;
+}
+
+.about{
+    margin-bottom: 8.2rem;
+}
+.about .about-content{
+    padding-right: 90px;
+}
+
+.about .about-content h1{
+    font-size: 5.6rem;
+    line-height: 7.6rem;
+    margin-bottom: 2.6rem;
+}
+
+.about .about-content p{
+    line-height: 2.6rem;
+}
+
+.about .about-content p.lead-text{
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    margin-bottom: 2rem;
+}
+.layout{
+    margin-bottom: 90px;
+}
+.layout .layout-item{
+    background-color: #F4F4F4;
+    margin-bottom: 1.7rem;
+    padding: 30px 30px 10px 0;
+}
+
+.layout .layout-item .layout-item-icon{
+    flex: 0 0 103px;
+    width: 103px;
+    text-align: center;
+}
+
+.layout .layout-item .layout-item-icon .icon{
+    font-size: 5rem;
+}
+.layout .layout-item .layout-item-content{
+    flex: 0 0 calc(100% - 103px);
+    width: calc(100% - 103px);
+}
+
+.layout .layout-item .layout-item-content h3{
+    font-size: 2rem;
+    line-height: 2.6rem;
+    margin-bottom: 2rem;
+}
+.layout .layout-item .layout-item-content p{
+    line-height: 2.4rem;
+}
+
+
+.grid .section-title{
+    margin-bottom: 5rem;
+}
+
+.grid .grid-item{
+    flex: 0 0 25%;
+    width: 25%;
+    background: #2C2D3C;
+    color: #fff;
+    padding: 41px 16px 50px;
+    text-align: center;
+}
+
+.grid .grid-item:nth-of-type(even){
+    background-color: #f4f4f4;
+    color:#2C2D3C;
+}
+
+
+.grid .grid-item .number{
+    width: 68px;
+    height: 68px;
+    display: inline-block;
+    border-radius: 50%;
+    line-height: 68px;
+    font-size: 6.4rem;
+    background: #fff;
+    font-weight: 700;
+    color: #000 !important;
+    margin-bottom: 1.7rem;
+}
+
+.grid .grid-item h5{
+    font-size: 2rem;
+    line-height: 2.6rem;
+    margin-bottom: 2rem;
+}
+
+.grid .grid-item p{
+   line-height: 2.4rem;
+   letter-spacing: -0.3px;
+}
+
+
+footer{
+    padding: 20px 0;
+    background-color: #28A745;
+}
+
+footer .copyright{
+    color:#fff;
+    font-size: 1.4rem;
+    line-height: 2.6rem;
+    letter-spacing: 0.72px;
+    font-family: 'Roboto', sans-serif;
+}

@@ -1,0 +1,182 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : May 24, 2019, 1:41:05 PM
+    Author     : frontend
+*/
+
+
+*{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    margin: 0;
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    font-size: 1.6rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color:#2C2D3C;
+}
+
+img{
+    max-width: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+
+.clearfix:after{
+    clear: both;
+    content: '';
+    display: table;
+}
+
+
+.container{
+    margin: 0 auto;
+    width: 1170px;
+}
+
+
+/*
+font-family: 'Open Sans', sans-serif; 400,700
+font-family: 'Roboto', sans-serif;400
+*/
+
+
+.section-title{
+    font-size: 3.2rem;
+    line-height: 4.3rem;
+    margin-bottom: 3.5rem;
+    text-align: center;
+}
+
+.test-image{
+    border: 1px solid #000;
+    margin-bottom: 100px;
+}
+
+.test-image img{
+    display: block;
+}
+
+.background{
+    min-height: 100vh;
+    background-color: red;
+    /*background-image: url(./../images/background.jpg);*/
+    background-repeat: no-repeat;
+    /*background-repeat: repeat-y;*/
+    background-position: top left;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+.background-2{
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom, red, green);
+     background-image: radial-gradient( red, green);
+}
+
+
+.table{
+    border: 1px solid #000;
+    width: 100%;
+}
+
+table th, table td{
+    border: 1px solid #000;
+    text-align: center;
+    vertical-align: central;
+    padding: 5px 10px;
+}
+
+table{
+    border-spacing: 0px;
+    border-collapse: collapse;
+}
+
+.table thead{
+    background: red;
+}
+
+.table tbody tr:nth-of-type(even){
+    background: #ccc;
+}
+
+.basic-list{
+    list-style-position: inside;
+
+/*    list-style-image: url(./assets/check.png)*/
+list-style: none;
+padding-left: 0
+}
+
+/*.basic-list li:before{
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}*/
+
+.basic-list li{
+    padding-left: 20px;
+    background-image: url('./assets/check.png');
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+
+
+.example-one{
+    display: flex;
+    justify-content: space-between;
+}
+
+.example-one-aside{
+    flex: 0 0 calc(20% - 15px);
+    width: calc(20% - 15px);
+}
+.example-one-content{
+    flex: 0 0 calc(80% - 15px);
+    width: calc(80% - 15px);
+}
+
+.example-one-aside ul{
+    list-style: none;
+    padding-left: 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+.example-one-aside ul li:not(:last-of-type){
+    border-bottom: 1px solid #ccc;
+}
+
+.example-one-aside ul a{
+    display: block;
+    line-height: 4rem;
+    color:#000;
+    padding: 0 10px;
+}
+.example-one-aside ul a:hover{
+    background: red;
+    color:#fff;
+}
